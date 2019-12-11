@@ -1,0 +1,14 @@
+{
+  "name": "test-ts-lsp",
+  "version": "1.0.0",
+  "main": "index.js",
+    "repository": "https://github.com/MokkeMeguru/test-typescript-language-server.git",
+    "scripts" :{
+        "build": "tsc"
+    },
+  "author": "MokkeMeguru",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^3.7.3"
+  }
+}
