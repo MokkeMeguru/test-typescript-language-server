@@ -4,3 +4,6 @@
                   :major-modes '(typescript-mode)
                   :remote? t
                   :server-id 'typescript-remote))
+
+;; for showing lsp log
+(setq lsp-print-io t)
