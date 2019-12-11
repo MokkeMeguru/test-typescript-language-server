@@ -1,0 +1,20 @@
+* What's this?
+  test for typescript-language-server & lsp-mode in emacs
+* How to use
+  M-x multi-term
+#+begin_example
+docker-compose run workspace
+#+end_example
+
+Open docker's folder in eshell, and eval this expression.
+#+begin_example
+(lsp-register-client
+ (make-lsp-client :new-connection
+                  (lsp-tramp-connection (list "typescript-language-server" "--stdio"))
+                  :major-modes '(typescript-mode)
+                  :remote? t
+                  :server-id 'typescript-remote))
+#+end_example
+
+Open index.ts in docker's workspace ex. `/usr/app/index.ts` and connect lsp via M-x lsp
+

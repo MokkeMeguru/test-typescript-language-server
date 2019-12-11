@@ -1,0 +1,12 @@
+version: '3'
+services:
+  workspace:
+    build: .
+    command: /bin/bash
+    volumes:
+      - "./:/usr/app"
+      - "node_modules:/usr/app/node_modules"
+    ports:
+      - 49998:49998
+volumes:
+  node_modules:
