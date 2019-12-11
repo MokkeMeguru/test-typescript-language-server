@@ -31,3 +31,5 @@ docker ps
  :path-mappings '(("/home/meguru/Github/test-ts-lsp" . "/usr/app"))
  :launch-server-cmd-fn #'lsp-docker-launch-new-container)
 #+end_src
+
+4. open /home/meguru/Github/test-ts-lsp/index.ts
