@@ -1,6 +1,7 @@
 ;; how to run typescript-language-server with docker project
 ;; 1. run in eshell
-(add-to-list 'load-path "~/.emacs.d/lsp-docker/")
+;; git clone https://github.com/emacs-lsp/lsp-docker/ ~/
+(add-to-list 'load-path "~/lsp-docker")
 (require 'lsp-docker)
 
 ;; 2. run in multi-term
@@ -12,7 +13,6 @@
 ;;;;;;;;;
 
 ;; 3. run in eshell
-
 (lsp-docker-register-client
  :server-id 'ts-ls
  :priority 1
